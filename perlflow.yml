@@ -1,0 +1,15 @@
+name: perlflow
+Model::DB:
+    connect_info:
+        - "DBI:mysql:host=localhost;database=perlflow;mysql_enable_utf8=1"
+        - "perlflow"
+        - "perlflow"
+        -  
+            AutoCommit: 1
+            quote_char: '`'
+            name_sep: '.'
+        - 
+            quote_char: '`'
+            name_sep: '.'
+session:
+    expires: 2592000

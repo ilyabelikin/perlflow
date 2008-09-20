@@ -4,11 +4,11 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>PerlFlows</title>
 
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/960.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/text.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/main.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/grid.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/960.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/text.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/main.css" />
 </head>
 <body>
   
@@ -16,9 +16,7 @@
   <h1>PerlFlows</h1>
 </div>
 <div class="container_12">
-  <div class="grid_8 border-right">
-   <h2>Новости</h2>
- 
+  <div class="grid_8">
    <h5>Far East Perl Workshop</h5>
    <p>26 сентября во Владивостоке пройдет второй российский воркшоп по перлу. Будет много всего интеересного. Приходите к часу во ВГУЭС в аудиторию 1013.</p>
  
@@ -29,8 +27,9 @@
    <h5>Parrot Developer Summit</h5>
    <p>15 и 16 ноября состоится первый саммит разработчиков Parrot. Важно отметить, что он пройдет в помещении Google.</p>
   </div>
-  <div class="grid_4 border-left">
-    <h2>YAPC::TV</h2>
+  <div class="grid_3 prefix_1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <!-- <h2>YAPC::TV</h2>
     
     <h5><a href="http://yapc.tv/2008/ye/lt/lt1-02-breunung-kephra/">Say hello to Kephra</a></h5>
     <p>Herbert Breunung. 13 August</p>
@@ -45,7 +44,7 @@
     <p>Damian Conway. 15 August 2008</p>
     
     <h5><a href="http://yapc.tv/2008/ye/jonathan-oop/">Object Orientation, The Perl 6 Way</a></h5>
-    <p>Jonathan Worthington. 13 August 2008</p>
+    <p>Jonathan Worthington. 13 August 2008</p> -->
   </div>
   <!-- <div class="column border-left">
     <h2>CPAN::Live</h2>
