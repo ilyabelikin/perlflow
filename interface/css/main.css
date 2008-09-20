@@ -1,6 +1,6 @@
 .header {
     color: gray;
-    border-bottom: 1px solid gray;
+/*    border-bottom: 1px solid gray;*/
     margin-bottom: 20px;
 }
 
@@ -20,6 +20,6 @@
     margin: 10px;
 }
 
-.column h5 {
+h5 {
     margin-bottom:0px;
 }

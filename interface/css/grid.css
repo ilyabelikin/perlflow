@@ -12,19 +12,18 @@
     width: 300px;
 }
 
-/*.border-right {
-    padding-right: 9px;
-    border-right: 1px solid gray;
+.border-right {
+/*    border-right: 1px solid gray;*/
 }
 
 .border-left {
-    padding-left: 9px;
-    border-left: 1px solid gray;
-}
+/*    border-left: 1px solid gray;
+    margin-left:-1px;
+*/}
 
 .border-both {
-    padding-left: 9px;
+    margin-left:-1px;
     padding-right: 9px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
-}*/
+}
