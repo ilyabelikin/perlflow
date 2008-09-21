@@ -14,6 +14,7 @@
   
 <div class="container header">
   <h1>PerlFlows</h1>
+  [% IF C.user %][% C.user.display %][% ELSE %]<a href="/user/login">Войдите через OpenID</a>[% END %]
 </div>
 <div class="container_12">
   <div class="grid_8">

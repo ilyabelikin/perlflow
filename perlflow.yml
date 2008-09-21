@@ -13,3 +13,12 @@ Model::DB:
             name_sep: '.'
 session:
     expires: 2592000
+
+Plugin::Authentication:
+    default_realm: openid
+    realms:
+        openid:
+            credential:
+                class: OpenID
+            store:
+                class: Null
