@@ -12,9 +12,16 @@
 </head>
 <body>
   
-<div class="container header">
-  <h1>PerlFlows</h1>
-  [% IF C.user %][% C.user.display %][% ELSE %]<a href="/user/login">Войдите через OpenID</a>[% END %]
+<div class="container_12 header">
+  <h1 class="grid_9">PerlFlows</h1>
+  <div class="grid_3">
+    [% IF C.user %]
+      [% C.user.display +%] (<a href="/user/logout">выйти</a>)
+    [% ELSE %]
+      [% PROCESS user/login.tt %]
+    [% END %]
+  </div>
+  <div class="clear">&nbsp;</div>
 </div>
 <div class="container_12">
   <div class="grid_8">

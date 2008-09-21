@@ -7,7 +7,6 @@ use parent 'Catalyst::Controller';
 sub index :Path :Args(0) {
     my ( $self, $c ) = @_;
     
-    
 }
 
 sub login : Local {
@@ -16,6 +15,13 @@ sub login : Local {
     if ($c->authenticate_openid) {
         return $c->res->redirect( $c->uri_for('/') );
     }
+}
+
+sub logout : Local {
+    my ( $self, $c ) = @_;
+
+    $c->logout;
+    $c->response->redirect($c->uri_for('/'));
 }
 
 =head1 AUTHOR
