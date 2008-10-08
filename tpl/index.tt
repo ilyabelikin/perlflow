@@ -13,7 +13,7 @@
 <body>
   
 <div class="container_12 header">
-  <h1 class="grid_9">PerlFlows</h1>
+  <h1 class="grid_9">Perl <span class="gray">news and events</span> Flow</h1>
   <div class="grid_3">
     [% IF C.user %]
       [% C.user.display +%] (<a href="/user/logout">выйти</a>)
@@ -24,7 +24,7 @@
   <div class="clear">&nbsp;</div>
 </div>
 <div class="container_12">
-  <div class="grid_8">
+  <div class="grid_9">
    <h5>Far East Perl Workshop</h5>
    <p>26 сентября во Владивостоке пройдет второй российский воркшоп по перлу. Будет много всего интеересного. Приходите к часу во ВГУЭС в аудиторию 1013.</p>
  
@@ -35,8 +35,30 @@
    <h5>Parrot Developer Summit</h5>
    <p>15 и 16 ноября состоится первый саммит разработчиков Parrot. Важно отметить, что он пройдет в помещении Google.</p>
   </div>
-  <div class="grid_3 prefix_1">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="grid_3">
+    <div class="aggregated">
+      <h4><img src="/img/yapc.ico" />YAPC.tv</h4>
+      <ul>
+        <li><a href="http://yapc.tv/2008/ye/lt/lt1-02-breunung-kephra/">Say hello to Kephra</a></li>
+        <li><a href="http://yapc.tv/2008/ye/jonathan-types/">Putting Types To Work In Perl 6</a></li>
+        <li><a href="http://yapc.tv/2008/ye/brian-backpan/">Indexing BackPAN</a></li>
+        <li><a href="http://yapc.tv/2008/ye/brian-backpan/">A.B.C.D.E.F.G.</a></li>
+        <li><a href="http://yapc.tv/2008/ye/jonathan-oop/">Object Orientation, The Perl 6 Way</a></li>
+      </ul>
+    </div>
+    <div class="aggregated">
+      <h4><img src="/img/perl6.ico" />Perl 6</h4>
+      <ul>
+        <li><a href="http://perl6.ru/perl6-highload/">Perl 6 и высокие нагрузки</a></li>
+        <li><a href="http://perl6.ru/parrot-summit/">Parrot Developer Summit</a></li>
+        <li><a href="http://perl6.ru/parrot-website/">Новый сайт Parrot</a></li>
+        <li><a href="http://perl6.ru/vladivostok-november-wiki/">Vladivostok.pm, November и Rakudo</a></li>
+        <li><a href="http://perl6.ru/conway-interview/">Интервью с Конвеем</a></li>
+        <li><a href="http://perl6.ru/november-wiki/">November wiki в онлайне</a></li>
+        
+      </ul>
+    </div>
+    
     <!-- <h2>YAPC::TV</h2>
     
     <h5><a href="http://yapc.tv/2008/ye/lt/lt1-02-breunung-kephra/">Say hello to Kephra</a></h5>

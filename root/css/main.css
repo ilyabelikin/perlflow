@@ -1,11 +1,17 @@
 .header {
-    color: gray;
 /*    border-bottom: 1px solid gray;*/
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-bottom: 1px solid #999;
 }
 
+.gray {
+    color: gray;
+}
 .header h1 {
     margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 2.5em;
 }
 
 .show_grid_12 {
@@ -29,4 +35,26 @@ input.openid-identifier {
    background-color: #fff;
    background-position: 0 50%;
    padding-left: 18px;
+}
+
+div.aggregated ul {
+    margin-top: 0px;
+    list-style: none;
+}
+
+div.aggregated ul li {
+    margin-left: 0px;
+}
+
+div.aggregated h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0px;
+    margin-left: -21px;
+}
+
+div.aggregated h4 img {
+    margin-right: 5px;
+    vertical-align: middle;
 }
