@@ -40,7 +40,7 @@ sub authenticate {
         my $current = $c->request->uri;
         $current->query(undef); # no query
         my $identity = $csr->claimed_identity($openid_url)
-            or Catalyst::Exception->throw($csr->err);
+            or return _error( $c, $csr->err );
         my $check_url = $identity->check_url(
             return_to  => $current . '?openid-check=1',
             trust_root => $current,
@@ -59,14 +59,19 @@ sub authenticate {
                 qw( url display rss atom foaf declared_rss declared_atom declared_foaf foafmaker ) };
             
             return $realm->find_user( $user, $c);
-            return 1;
         } else {
-            Catalyst::Exception->throw("Error validating identity: " .
-                $csr->err);
+            return _error( $c, "Error validating identity: " . $csr->err );
         }
     } else {
         return 0;
     }
+}
+
+sub _error {
+    my ( $c, $msg ) = @_;
+
+    $c->log->warn( $msg );
+    return;
 }
 
 1;

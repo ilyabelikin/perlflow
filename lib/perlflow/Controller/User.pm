@@ -14,6 +14,8 @@ sub login : Local {
     
     if ( $c->authenticate( $c->request->param("openid_url") ) ) {
         return $c->res->redirect( $c->uri_for('/') );
+    } else {
+        #auth error
     }
 }
 
