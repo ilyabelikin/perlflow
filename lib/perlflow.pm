@@ -2,6 +2,7 @@ package Perlflow;
 
 use strict;
 use warnings;
+#I use catamoose here, so the path is custom
 use lib '/Users/dzema/src/Catalyst-Runtime/lib/';
 
 use Catalyst::Runtime '5.70';
@@ -15,9 +16,21 @@ use Catalyst::Runtime '5.70';
 #                 directory
 
 use parent qw/Catalyst/;
-use Catalyst qw/-Debug
-                ConfigLoader
-                Static::Simple/;
+use Catalyst qw/
+    -Debug
+
+    ConfigLoader
+    Static::Simple
+
+    Unicode
+    Static::Simple
+
+    Authentication
+
+    Session
+    Session::Store::FastMmap
+    Session::State::Cookie
+/;
 our $VERSION = '0.01';
 
 # Configure the application. 
