@@ -26,7 +26,6 @@ use Catalyst qw/
     Static::Simple
 
     Authentication
-    Authentication::Credential::OpenID
 
     Session
     Session::Store::FastMmap

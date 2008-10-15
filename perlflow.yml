@@ -19,6 +19,13 @@ Plugin::Authentication:
     realms:
         openid:
             credential:
-                class: OpenID
+                class: MyOpenID
             store:
-                class: Null
+                class: DBIx::Class
+                user_class: DB::User
+                ignore_fields_in_find: [ 'url' ]
+                # id_field: display
+                role_relation: roles
+                role_field: role
+            auto_create_user: 1
+

@@ -12,7 +12,7 @@ sub index :Path :Args(0) {
 sub login : Local {
     my ( $self, $c ) = @_;
     
-    if ($c->authenticate_openid) {
+    if ( $c->authenticate( $c->request->param("openid_url") ) ) {
         return $c->res->redirect( $c->uri_for('/') );
     }
 }
