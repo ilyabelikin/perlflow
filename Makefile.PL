@@ -12,6 +12,18 @@ requires 'Catalyst::Action::RenderView';
 requires 'parent';
 requires 'Config::General'; # This should reflect the config file format you've chosen
                  # See Catalyst::Plugin::ConfigLoader for supported formats
+
+requires 'Catalyst::Plugin::Session::State::Cookie';
+requires 'Catalyst::Plugin::Session::Store::FastMmap';
+requires 'Catalyst::Plugin::Authentication';
+requires 'Catalyst::Plugin::Unicode';
+requires 'Net::OpenID::Consumer';
+requires 'LWPx::ParanoidAgent';
+requires 'Catalyst::Authentication::Store::DBIx::Class';
+requires 'Catalyst::View::TT';
+requires 'DBIx::Class::TimeStamp';
+
+
 catalyst;
 
 install_script glob('script/*.pl');
